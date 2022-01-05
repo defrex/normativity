@@ -6,7 +6,7 @@ module.exports = {
       beforeFiles: [
         {
           source: '/',
-          destination: '/index',
+          destination: '/default',
         },
       ],
     }
