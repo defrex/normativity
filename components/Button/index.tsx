@@ -55,7 +55,6 @@ export const Button = forwardRef(function Button(
           <Text
             value={text}
             className={classnames(styles.buttonText, styles[`${type}Text`])}
-            styleNumber={40}
             uppercase
           />
         ) : null}
