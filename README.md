@@ -1,3 +1,1 @@
-[View Live](https://normativity-oxkvbizqx-defrex.vercel.app/)
-
-The source for the content can be found in the `/content` directory.
+This repo is a philosophical text. The source for the content can be found in the `/content` directory.
