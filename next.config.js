@@ -2,11 +2,13 @@
 module.exports = {
   reactStrictMode: true,
   async rewrites() {
-    return [
-      {
-        source: '/',
-        destination: '/index',
-      },
-    ]
+    return {
+      beforeFiles: [
+        {
+          source: '/',
+          destination: '/index',
+        },
+      ],
+    }
   },
 }
