@@ -1,0 +1,60 @@
+@use "sass:map";
+@use "../../lib/style/colors";
+
+$montserrat: Montserrat, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+$line-height: 1.1;
+$weights: 400, 700;
+$sizes: 12px, 13px, 14px, 16px, 17px, 19px, 24px, 32px;
+
+// The below is attempting to factor line-height out of the
+// top and bottom of any given text block, while maintaining
+// it between lines.
+@mixin text($size, $weight, $color) {
+  display: block;
+  padding-top: 1px;
+  padding-bottom: 1px;
+
+  font-family: $montserrat;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+
+  color: $color;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+  }
+
+  // This magic number needs to be tuned per-font
+  $magic-adjuster: 0.7; // Inter
+
+  &::before {
+    margin-top: calc((#{$magic-adjuster} - #{$line-height}) * 0.5em);
+  }
+
+  &::after {
+    margin-bottom: calc((#{$magic-adjuster} - #{$line-height}) * 0.5em);
+  }
+}
+
+@each $weight in $weights {
+  @each $size in $sizes {
+    .text-#{$size}-#{$weight}-inherit {
+      @include text($size, $weight, inherit);
+    }
+
+    @each $color-name, $color-value in colors.$colors {
+      .text-#{$size}-#{$weight}-#{"" + $color-name} {
+        @include text($size, $weight, inherit);
+      }
+    }
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

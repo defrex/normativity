@@ -1,0 +1,33 @@
+$transparent: transparent;
+$white: #ffffff;
+$overlay: rgba(0, 0, 0, 0.6);
+
+$black10: #fbfcfc;
+$black20: #efefef;
+$black30: #d3d3d3;
+$black40: #999999;
+$black50: #7a7a7a;
+$black60: #616161;
+$black70: #494949;
+$black80: #313131;
+$black90: #292929;
+
+$brand: #e44867;
+$brandHightlight: #d11f42;
+
+$colors: (
+  transparent: $transparent,
+  white: $white,
+  overlay: $overlay,
+  black10: $black10,
+  black20: $black20,
+  black30: $black30,
+  black40: $black40,
+  black50: $black50,
+  black60: $black60,
+  black70: $black70,
+  black80: $black80,
+  black90: $black90,
+  brand: $brand,
+  brandHightlight: $brandHightlight,
+);

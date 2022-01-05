@@ -1,0 +1,19 @@
+@use "../../lib/style/screens";
+@use "../../lib/style/spacing";
+
+$screens: (
+  small: 512px,
+  medium: screens.$mediumMin,
+  large: screens.$largeMin,
+);
+
+.container {
+  margin: auto;
+  width: 100%;
+}
+
+@each $screen-key, $screen-value in $screens {
+  .container-#{$screen-key} {
+    max-width: $screen-value;
+  }
+}

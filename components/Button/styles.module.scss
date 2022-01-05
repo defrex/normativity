@@ -1,0 +1,80 @@
+@use "sass:color";
+@use "../../lib/style/colors";
+@use "../../lib/style/spacing";
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: spacing.$small;
+  text-decoration: none;
+  text-shadow: none;
+  cursor: pointer;
+}
+.button:hover {
+  text-decoration: none;
+}
+.buttonText {
+}
+.buttonDisabled {
+}
+
+.primary {
+  background-color: colors.$brand;
+}
+.primary:hover {
+  background-color: colors.$brandHightlight;
+}
+.primaryText {
+  color: colors.$white;
+}
+.primaryDisabled {
+  background-color: colors.$black60;
+
+  &:hover {
+    background-color: colors.$black60;
+  }
+}
+
+// .secondary {
+//   background-color: colors.$indigo80;
+// }
+// .secondary:hover {
+//   background-color: colors.$indigo90;
+// }
+// .secondaryText {
+//   color: colors.$indigo10;
+// }
+// .secondaryDisabled {
+//   background-color: colors.$black60;
+// }
+
+// .plain {
+//   border: 1px solid colors.$white;
+// }
+// .plain:hover {
+//   border: 1px solid colors.$indigo20;
+// }
+// .plain:hover .plainText {
+//   color: colors.$indigo20;
+// }
+// .plainText {
+//   color: colors.$white;
+// }
+// .plainDisabled {
+// }
+
+// .plain-dark {
+//   border: 1px solid colors.$black60;
+// }
+// .plain-dark:hover {
+//   border: 1px solid colors.$black40;
+// }
+// .plain-dark:hover .plain-darkText {
+//   color: colors.$indigo20;
+// }
+// .plain-darkText {
+//   color: colors.$black80;
+// }
+// .plain-darkDisabled {
+// }
