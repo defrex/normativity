@@ -28,15 +28,7 @@ Over time, this leads to aligning the mental models. This set of aligned models 
 
 ### Asymmetry of Frame Projection
 
-In practice, framings are sent and received with a magnitude. The magnitude of a framing can be influenced both explicitly and implicitly, as well as by the sender and the recipient.
-
-A sender may explicitly amplify their framing by being the first person to tell a story, or by making stating details that could have been left implied.
-
-A sender may be implicitly amplified by being in a position of influence, or by failing to express themselves clearly, etc.
-
-A recipient may explicitly reject the framing being used. With, say, critical reasoning.
-
-Finally, a recipient may implicitly give different senders different magnitudes based on the social hierarchy or past experience with them.
+[explore encoder/decoder asymmetries and their implications, potentially addressing the transformed portion of the information]
 
 ### Normativity Enables Distributed Computation
 
@@ -56,6 +48,4 @@ Or take organization structure. If we want to maximize the utility from individu
 
 ### More to be Done
 
-More can also be said about the role of asymmetric power dynamics in projected frames. One can project more or less framing (consciously or unconsciously), as well as assigning different weights to people who are projecting their frames on us. The dynamics of these asymmetries are likely critical to quantifying information flow.
-
-I’d also like to flush out the idea into a fuller worldview, inclusive of meme dynamics more broadly. This broader version could easily describe systems as varied as economics, politics, or marketing.
+I’d like to flush out the idea into a fuller worldview, inclusive of meme dynamics more broadly. This broader version could easily describe systems as varied as economics, politics, or marketing.
